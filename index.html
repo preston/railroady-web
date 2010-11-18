@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>RailRoady :: Ruby Model &amp; Controller Class Diagram Generator</title>
+        <meta name="keywords" content="rails, ruby, uml, class diagram, generator, reverse engineering, model, controller"/>
+        <meta name="description" content="RailRoady generates Rails 3 model and controller UML diagrams as cross-platform .svg files, as well as in the DOT language. "/>
+    </head>
+    <body>
+        <div id="header_side">
+        </div>
+        <div id="header">
+            <div id="name">
+                RailRoady
+            </div>
+            <ol>
+                <li>
+                    <span id="tagline">Easy UML diagram generation for Rails 3.</span>
+                </li>
+                <li>
+                    <a href="http://rubyforge.org/projects/railroady/" class="numbers">[RubyForge Project]</a>
+                </li>
+                <li>
+                    <a href="http://github.com/preston/railroady">[Source]</a>
+                </li>
+                <li>
+                    <a href="http://prestonlee.com">[Maintainer]</a>
+                </li>
+                <li>
+                    <a href="http://railroady.prestonlee.com/">[Homepage]</a>
+                </li>
+            </ol>
+        </div>
+        <div id="content_wrapper">
+            <div id="content">
+                <div id="banner">
+                    <div id="blurb">
+                        <em>RailRoady</em>
+                        is a dirt simple library for <em>UML diagram</em>
+                        generator for <em>Rails 3</em>,
+                        capable of analyzing both <em>models</em> and
+						<em>controllers</em>. It rocks!
+						
+                    </div>
+                    <div class="clear">
+                        &nbsp;
+                    </div>
+                </div>
+                
+                <div id="guts">
+					
+                	<div id="sidebar">
+	                    <h1>Installing</h1>
+						<p>Start by adding railroady as a dependency to your Rails 3 project within your "Gemfile", then:</p>
+	                    <div class="code">
+                        	sudo port install graphviz
+						</div>
+	                    <div class="code">
+                        	sudo gem install railroady
+						</div>
+	                    <div class="code">
+							cd my_rails_3_project
+						</div>
+	                    <div class="code">
+                        	rake diagram:all
+						</div>
+	                    <div class="code">
+                        	open doc/*.svg
+						</div>
+						
+	                    <h2>Alternate Usage</h2>
+	                    <p>
+							If you don't like the way the rake tasks generate files, you can run the "railroady" command-line tool to manually generate DOT diagram source code. See the README for details. 
+	                    </p>
+	                </div>
+	
+					<img id="screenshot_1" src="images/screenshot_1.png" alt="Railroady SVG screenshot." class="screenshot"/>
+					<img id="screenshot_2" src="images/screenshot_2.png" alt="Railroady SVG screenshot." class="screenshot"/>
+					<img id="screenshot_3" src="images/screenshot_3.png" alt="Railroady SVG screenshot." class="screenshot"/>
+
+	               <div>
+                        <h2>Features</h2>
+                        <p>
+                            <ol>
+                                <li>
+                                    <h3>Trivial to integrate</h3> Simple to install and run.
+                                </li>
+                                <li>
+                                    <h3>Dynamic</h3> Reverse engineer your existing source code. No more stupid Vizio diagrams that are perpetually outdated.
+                                </li>
+                                <li>
+                                    <h3>Vector Graphics</h3> Rake tasks generate scalable vector graphics (SVG) files, which can be scaled to any size without quality loss. View them in a web browser, or even print massive wall-size class diagrams with Adobe Illustrated
+                                </li>
+                                <li>
+                                    <h3>F/OSS</h3> Free and open GPL licensing. No fees. Ever.
+                                </li>
+                                <li>
+                                    <h3>Cross platform</h3>Runs on Linux and OS X.
+                                </li>
+                                <li>
+                                    <h3>Raw DOT Support</h3> Just want the diagram source code without the .SVG files? No problem! (See the gem README file.)
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>RailRoady is simple because it DOESN'T require..</h2>
+                        <ol>
+                            <li>
+                                <h3>Clicking anything</h3> No more using OmniGraffle or Vizio for class diagram deliverables! Run the rake task, and out pop your diagrams. 
+                            </li>
+                            <li>
+                                <h3>Configuration</h3> Reasonable levels of detail provide for thorough diagrams that are not overwhelming to view and understand.
+                            </li>
+                            <li>
+                                <h3>Manual layout</h3> Even complicated models are layed out in a space-efficient manner. No more manually drag-and-dropping boxes around the screen every time you add a class.
+                            </li>
+                        </ol>
+                    </div>
+
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+					    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+					    var disqus_shortname = 'railroady'; // required: replace example with your forum shortname
+
+					    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+					    // var disqus_identifier = 'unique_dynamic_id_1234';
+					    // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+					    /* * * DON'T EDIT BELOW THIS LINE * * */
+					    (function() {
+					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					    })();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					<div class="clear">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
