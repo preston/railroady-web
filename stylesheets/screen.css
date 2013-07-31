@@ -12,7 +12,7 @@ h1, h2, h3 {font-weight: bold;}
 h1 {font-size: 24pt; color: #194c38;}
 h2 {font-size: 18pt; color: #194c38;}
 h3 {color: #697c68;}
-em {color: #ffffff; font-size: 140%;}
+em {color: #888; font-size: 140%;}
 a {color: #333; text-decoration: none;}
 
 .clear { clear: both;}
@@ -32,20 +32,20 @@ img#screenshot_2 {top: 700px;}
 img#screenshot_3 {top: 1100px;}
 
 #content_wrapper { width: 700px; margin: 0 auto;
- -moz-box-shadow:0px 4px 15px #191919;
- -webkit-box-shadow:0px 4px 15px #191919;
- box-shadow:0px 4px 15px #191919;
-
+ -moz-box-shadow:		0px 20px 20px #777;
+ -webkit-box-shadow:	0px 20px 20px #777;
+ box-shadow:			0px 20px 20px #777;
+ border-radius: 2px;
     
 }
 
 #content {}
 #content ol {list-style-type: none; margin-left: 20px;}
 #content li {margin-top: 10px;}
-#content #blurb { width: 320px; float: right; margin: 10px; clear: none; font-size: 16pt; color: #d8d8d8;}
+#content #blurb { padding: 40px; font-size: 16pt; color: #d8d8d8; background: #000; box-shadow: 0 0 200px #777 inset;}
 #content #guts {position: relative;}
 #content #guts > div {margin:20px; padding: 10px; }
 #content #guts p {padding-bottom: 20px; display: block;}
-#content #banner { background-position: 0px 0px; background-repeat: no-repeat; background-image: url(../images/banner.jpg); width: 700px; height: 202px;}
+/*#content #banner { background-position: 0px 0px; background-repeat: no-repeat; background-image: url(../images/banner.jpg); width: 700px; height: 202px;}*/
 
 #sidebar { float: right; width: 300px; margin: 20px; clear: none; background-color: #FDFEEE; padding: 10px;}
